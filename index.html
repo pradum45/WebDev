@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center"><strong></strong><b>NIT KURUSHERTRA SURVEY FORM</b></strong></h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Roll no.<span class="clue"></span></label
+          >
+          <input
+            type="number"
+            name="roll no."
+            id="number"
+            min="100000000"
+            max="100000000"
+            class="form-control"
+            placeholder="Enter your roll no."
+          />
+        </div>
+        <div class="form-group">
+          <p>In which course you enroll?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">B.tech</option>
+            <option value="job">MCA</option>
+            <option value="learner">M.tech</option>
+            <option value="preferNo">MBA</option>
+            <option value="other">PhD</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you feel adequately supported by academic advisors and counseling services?:</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="No"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />not-sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>How satisfied are you with the overall quality of teaching?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Very effective">Very effective</option>
+            <option value="effective">effective</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Ineffective">Ineffective</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you explore in collage?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="Hostels"
+              type="checkbox"
+              class="input-checkbox"
+            />Hostels</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Open air theater"
+              type="checkbox"
+              class="input-checkbox"
+            />Open air theater</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Jubilee hall"
+              type="checkbox"
+              class="input-checkbox"
+            />Jubilee hall</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Senate hall"
+              type="checkbox"
+              class="input-checkbox"
+            />Senate Hall</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Library"
+              type="checkbox"
+              class="input-checkbox"
+            />Library</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Sport Ground"
+              type="checkbox"
+              class="input-checkbox"
+            />Sport Ground</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="CCN"
+              type="checkbox"
+              class="input-checkbox"
+            />CCN</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Department"
+              type="checkbox"
+              class="input-checkbox"
+            />Department</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Health Center"
+              type="checkbox"
+              class="input-checkbox"
+            />Health Center</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Gym"
+              type="checkbox"
+              class="input-checkbox"
+            />Gym</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Lake"
+              type="checkbox"
+              class="input-checkbox"
+            />Lake</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
